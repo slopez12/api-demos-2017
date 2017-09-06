@@ -1,16 +1,5 @@
-console.log("You have JavaScript!");
-function howManyPets(user) {
-  var plural = "s";
-  if (user.pets.length === 1) {
-    plural = "";
-  }
-  return user.name + " has " + user.pets.length + " pet" + plural;
-}
-user = {
-  name: "Sara",
-  age: 21,
-  pets: ["Jack", "Chiquis", "Mama Cat"],
-  num_pets: function() {
-    return this.pets.length;
-  }
-}
+$('#user-form').on('submit', function(e) {
+  var username = $('#username').val();
+  $('#results').append('<li><a href="https://api.github.com/users/' + username + '">' + username + '</a></li>');
+  e.preventDefault();
+});
