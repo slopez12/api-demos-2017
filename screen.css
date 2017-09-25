@@ -47,9 +47,23 @@ table {
 	border-spacing: 0;
 }
 
+/* changes start here */
 h1 {
   color:purple;
   font-size: 3em;
   font-weight: bold;
   font-family: Helvetica, Arial, sans-serif;
+}
+
+
+img {
+	display: block;
+	float: left;
+	width: 2em;
+	margin-right: 1em;
+}
+
+#results li {
+	clear: both;
+	padding-bottom: 1em;
 }
